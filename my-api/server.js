@@ -5,9 +5,9 @@ const port = 3000;
 
 app.use(cors(
   {
-    origin: ["https://deploy-mern-lwhq.vercel.app"],
-    methods: ["POST" ,"GET"],
-    credentials: true
+    // origin: ["https://deploy-mern-lwhq.vercel.app"],
+    // methods: ["POST" ,"GET"],
+    // credentials: true
 
   }
 ));
@@ -566,7 +566,7 @@ app.use(cors());
 app.use(bodyParser.json());
 
 // Connect to MongoDB
-mongoose.connect('mongodb://localhost:27017/usersDB', {
+mongoose.connect('mongodb+srv://ersahilwallu:Bbb07ak47@cluster1.gt5gc.mongodb.net/?retryWrites=true&w=majority&appName=Cluster1', {
   useNewUrlParser: true,
   useUnifiedTopology: true,
 })
